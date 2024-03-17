@@ -1,3 +1,8 @@
-/frontend/node_moules
-/backend/node_modules
-/config.js
+# Ignore node_modules in frontend
+frontend/node_modules/
+
+# Ignore node_modules in backend
+backend/node_modules/
+
+# Ignore config.js file in backend
+backend/config.js
