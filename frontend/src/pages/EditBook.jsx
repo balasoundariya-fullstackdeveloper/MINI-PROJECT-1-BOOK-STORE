@@ -16,7 +16,7 @@ const EditBook = () => {
 
   useEffect(() => {
     setLoading(true);
-    axios.get(`https://mini-project-1-book-store.onrender.com/books/${id}`)
+    axios.get(`http://localhost:5555/books/${id}`)
     .then((response) => {
         setAuthor(response.data.author);
         setPublishYear(response.data.publishYear)
@@ -24,7 +24,7 @@ const EditBook = () => {
         setLoading(false);
       }).catch((error) => {
         setLoading(false);
-        alert('An error happened. Please Chack console');
+        alert('An error happened. Please Check console');
         console.log(error);
       });
   }, [])
